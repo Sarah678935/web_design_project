@@ -1,0 +1,162 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at 378% -4%, #8aac6e 40%, transparent 40%, transparent 90%), #e2ead1;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: bottom;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    font-family: 'Baskervville', serif;
+    font-weight: 700;
+}
+
+p,
+span {
+    color: rgba(255, 255, 255, 0.815);
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.d-none {
+    display: none;
+}
+
+body>main>*,
+header {
+    padding: 0 10px;
+}
+
+body>main>*,
+header,
+.w-100>* {
+    max-width: 1310px;
+    margin: auto;
+}
+
+.w-100 {
+    max-width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+header ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo>a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+.logo h1 {
+    font-size: 1.1rem;
+}
+
+.main-li {
+    display: none;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.cart-icon {
+    width: 14px;
+    height: 14px;
+    fill: #fff;
+}
+
+header .icon-li {
+    margin: 0 5px;
+}
+
+header .icon-li a {
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+}
+
+header ul .heart-li a {
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+header .icon-li:last-child a {
+    background-color: rgb(216, 5, 90);
+}
+
+header .icon-li:last-child a::after {
+    content: attr(data-cart);
+    position: absolute;
+    left: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #999;
+}
+
+@media screen and (max-width: 306px) {
+    .new-section {
+        padding: 5px;
+    }
+
+    header .icon-li a {
+        padding: 1px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .main-li {
+        display: inline-block;
+        margin: auto 20px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .burger {
+        display: none;
+    }
+}
