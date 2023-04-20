@@ -136,6 +136,84 @@ header .icon-li:last-child a::after {
     color: #999;
 }
 
+footer {
+    background-color: #fff;
+    max-width: 100%;
+    color: #555;
+    padding: 10px 5px;
+}
+
+.footer-subs-div {
+    flex-basis: 30%;
+    margin-bottom: 5% !important;
+}
+
+footer>div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 20px 5px;
+    color: #555;
+}
+
+.section-white {
+    background-color: #fff;
+}
+
+.section-white h1,
+.section-white h2,
+.section-white h3,
+.section-white h4 {
+    color: #555;
+}
+
+.section-white p,
+.section-white span {
+    color: #777;
+    cursor: pointer;
+}
+
+footer p,
+footer span {
+    color: #555;
+}
+
+
+
+.cover-button,
+.footer-subscribe {
+    outline: none;
+    border: 1px solid #555;
+    margin: auto;
+    display: block;
+    color: #fff;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+
+.cover-button {
+    background-color: rgb(216, 5, 90);
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+footer p,
+footer span {
+    color: #555;
+}
+
+.top-cover>div>* {
+    text-align: center;
+}
+
+.top-cover-text h2 {
+    margin: 60px 0 30px;
+}
+
+.top-cover-text p {
+    margin-bottom: 30px;
+}
+
 @media screen and (max-width: 306px) {
     .new-section {
         padding: 5px;
@@ -158,5 +236,140 @@ header .icon-li:last-child a::after {
 
     .burger {
         display: none;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .top-cover-text h2 {
+        font-size: 2.8rem;
+        margin-right: -80%;
+    }
+
+    .flower-product-details .color-delivery {
+        flex-direction: row;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-subs-div {
+        margin-right: 10%;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 774px) {
+    .top-cover {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .top-cover-text {
+        padding-left: 30%;
+    }
+
+    .top-cover-text h2,
+    .top-cover-text p {
+        margin-right: -50%;
+        text-align: left;
+    }
+
+    .top-cover-text .see-more {
+        margin: 0;
+    }
+
+    .cover-img {
+        z-index: -10;
+    }
+
+    .best-offers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .available-flowers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .best-main {
+        grid-row: span 2;
+    }
+
+    .best-product>a {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .best-product {
+        height: 100%;
+    }
+
+    .best-product img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .best-main>a {
+        display: block;
+    }
+
+    .footer-bottom>div {
+        margin: auto;
+    }
+
+    .footer-bottom>div:last-child {
+        margin-top: 30px;
+    }
+
+    .best-product>a>div:last-child {
+        width: 60%;
+        height: 100%;
+    }
+
+    .best-main>a>div:last-child {
+        width: 100%;
+        height: auto;
+    }
+
+    .best-main img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .available-flowers .secondary {
+        display: block;
+    }
+
+    .work-gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-img-two,
+    .gallery-img-three {
+        display: block;
+    }
+
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 50px;
+    }
+
+    .flower-product {
+        grid-template-columns: 1fr 1fr;
     }
 }
